@@ -1,29 +1,30 @@
-.part1>h2{
+.part1 > h2 {
     color: red;
 }
 
-.part1>p{
+.part1 > p {
     background-color: black;
     color: white;
 }
 
-.part2>h2{
+.part2 > h2 {
     color: green;
 }
 
-.part2>p{
+.part2 > p {
     background-color: darkred;
     color: green;
 }
 
-.part3>p{
+.part3 > p {
     color: green;
 }
 
-.part3 div{
+.part3 div {
     color: green;
 }
-.part4>p{
+
+.part4 > p {
     color: green;
 }
 
