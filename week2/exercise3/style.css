@@ -1,4 +1,4 @@
-.csym019{
+.csym019 {
     float: left;
     background-color: aquamarine;
     padding: 2%;
@@ -7,7 +7,7 @@
     border-radius: 10px;
 }
 
-.csym015{
+.csym015 {
     display: inline-block;
     background-color: yellow;
     padding: 2%;
@@ -16,7 +16,7 @@
     border-radius: 10px;
 }
 
-.csym016{
+.csym016 {
     float: left;
     background-color: #fd617c;
     padding: 2%;
@@ -25,7 +25,7 @@
     border-radius: 10px;
 }
 
-.csym020{
+.csym020 {
     display: inline-block;
     background-color: #3f9f35;
     border-radius: 10px;
@@ -34,6 +34,6 @@
     width: 42%;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
 }
