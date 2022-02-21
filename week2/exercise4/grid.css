@@ -2,11 +2,12 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 80% 20%;
     grid-template-areas:
-      "header header header"
-      "nav main right"
-      "footer footer  footer";
+      "header header"
+      "nav nav"
+      "main right"
+      "footer footer";
 }
 
 .header {
@@ -23,7 +24,6 @@
 .left-bar {
     background-color: yellow;
     display: flex;
-    flex-direction: column;
     align-items: center;
     grid-area: nav;
 
@@ -31,6 +31,13 @@
 
 .left-bar > ul {
     margin-top: 1.5rem;
+}
+
+.left-bar ul{
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .right-bar {
