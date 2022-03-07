@@ -2,7 +2,7 @@
 function attachCircleListener(){
 
         const circle = document.getElementById('circle');
-        circle.style.left = `${circle.offsetLeft + 10}px`
+        circle.style.left = `${circle.offsetLeft - 10}px`
 
 }
 
