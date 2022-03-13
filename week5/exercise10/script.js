@@ -1,26 +1,57 @@
-
 function attachCircleListener(event){
-        const circle = document.getElementById('circle');
 
 
     switch (event.keyCode){
         case 37:
-            circle.style.left = `${circle.offsetLeft - 10}px`
+            moveCircleLeft()
             break;
         case 39:
-            circle.style.left = `${circle.offsetLeft + 10}px`
+            moveCircleRight()
             break;
         case 38:
-            circle.style.top = `${circle.offsetTop - 10}px`
-            break;
+            moveCircleTop()
+           break;
         case 40:
-            circle.style.top = `${circle.offsetTop + 10}px`
+            moveCircleBottom()
             break;
     }
 
 }
 
+function moveCircleLeft(){
 
+    setInterval(function (){
+        const circle = document.getElementById('circle');
+
+        circle.style.left = `${circle.offsetLeft - 1}px`
+    },10)
+
+}
+
+function moveCircleRight(){
+
+    setInterval(function (){
+        const circle = document.getElementById('circle');
+        circle.style.left = `${circle.offsetLeft + 1}px`
+    },10)
+
+}
+
+function moveCircleTop(){
+    setInterval(function (){
+        const circle = document.getElementById('circle');
+        circle.style.top = `${circle.offsetTop - 1}px`
+    },10)
+
+}
+
+function moveCircleBottom(){
+    setInterval(function (){
+        const circle = document.getElementById('circle');
+        circle.style.top = `${circle.offsetTop + 1}px`
+    })
+
+}
 function attachListeners(){
     const circle = document.getElementById('circle');
     circle.style.opacity = '1'
