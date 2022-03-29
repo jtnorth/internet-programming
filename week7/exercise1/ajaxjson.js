@@ -23,6 +23,7 @@ function showContents() {
             })
         }
 
+
         document.getElementById("countylist").innerHTML = txt;
 
         //clear error message in case of success state after error

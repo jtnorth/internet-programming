@@ -1,6 +1,7 @@
 function makeAjaxRequest() {
 
-    $.getJSON( "counties.json", function( data ) {
+
+    $.getJSON("counties.json", function (data) {
         const {counties} = data;
         let txt = "";
         counties && counties.forEach((county) => {
@@ -8,9 +9,11 @@ function makeAjaxRequest() {
         });
         $('#countylist').html(txt);
 
-    }).fail(function(error) { $('#updatemessage').text(`An error occurred: ${JSON.stringify(error)}`) })
+    }).fail(function (error) {
+        $('#updatemessage').text(`An error occurred: ${JSON.stringify(error)}`)
+    })
 }
 
-$( document ).ready(function() {
+$(document).ready(function () {
     makeAjaxRequest()
 })
